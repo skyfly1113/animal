@@ -1,0 +1,6 @@
+{
+  "name": "동물 친구 수세기 놀이",
+  "description": "귀여운 동물 캐릭터와 생생한 소리 효과로 즐겁게 배우는 유아용 수세기 학습 애플리케이션",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Jua', 'Gaegu', 'Nunito', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-6deg); }
+  75% { transform: rotate(6deg); }
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0.3); opacity: 0; }
+  70% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.6)); }
+  50% { filter: drop-shadow(0 0 16px rgba(251, 191, 36, 0.9)); }
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 2s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 0.8s ease-in-out infinite;
+}
+
+.animate-pop-in {
+  animation: pop-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Custom 3D-like tactile button styling for toddler fingers */
+.toddler-btn-yellow {
+  background: linear-gradient(to bottom, #fde047, #eab308);
+  box-shadow: 0 6px 0 #ca8a04, 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+.toddler-btn-yellow:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #ca8a04, 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.toddler-btn-green {
+  background: linear-gradient(to bottom, #86efac, #22c55e);
+  box-shadow: 0 6px 0 #16a34a, 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+.toddler-btn-green:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #16a34a, 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.toddler-btn-pink {
+  background: linear-gradient(to bottom, #f472b6, #ec4899);
+  box-shadow: 0 6px 0 #db2777, 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+.toddler-btn-pink:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #db2777, 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.toddler-btn-blue {
+  background: linear-gradient(to bottom, #60a5fa, #3b82f6);
+  box-shadow: 0 6px 0 #2563eb, 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+.toddler-btn-blue:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #2563eb, 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.toddler-btn-orange {
+  background: linear-gradient(to bottom, #fb923c, #ea580c);
+  box-shadow: 0 6px 0 #c2410c, 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+.toddler-btn-orange:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #c2410c, 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.toddler-btn-purple {
+  background: linear-gradient(to bottom, #c084fc, #9333ea);
+  box-shadow: 0 6px 0 #7e22ce, 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+.toddler-btn-purple:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #7e22ce, 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
